@@ -1,0 +1,33 @@
+{
+    "i2c": {
+        "device": "/dev/i2c-1",
+        "ade7878a_address": 56
+    },
+    "server": {
+        "url": "http://localhost:3000/api/readings",
+        "timeout_ms": 5000,
+        "max_retries": 3,
+        "api_key": "secure_key_123"
+    },
+    "polling": {
+        "interval_ms": 1000,
+        "max_cache_size": 100
+    },
+    "appliances": [
+        {
+            "id": 1,
+            "name": "refrigerator",
+            "calibration_factor": 1.02
+        },
+        {
+            "id": 2,
+            "name": "washing_machine",
+            "calibration_factor": 0.98
+        },
+        {
+            "id": 3,
+            "name": "air_conditioner",
+            "calibration_factor": 1.05
+        }
+    ]
+}
